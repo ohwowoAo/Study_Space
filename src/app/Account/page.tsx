@@ -1,12 +1,12 @@
 import React from "react";
-import Profile from "./profile";
-import Navibar from "./navibar";
+import Account from "./account";
+import Navibar from "../navibar";
 
 const page = () => {
   return (
     <div className="relative">
       <Navibar />
-      <Profile />
+      <Account />
     </div>
   );
 };
