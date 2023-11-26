@@ -1,16 +1,16 @@
 import React from "react";
-import Display from "./display";
 import Navibar from "../navibar";
+import Notifications from "./notifications";
 import { Toaster } from "@/components/ui/toaster";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="relative">
       <Navibar />
-      <Display />
+      <Notifications />
       <Toaster />
     </div>
   );
 };
 
-export default page;
+export default Page;

@@ -86,7 +86,7 @@ const Account = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 relative"
+          className="space-y-8 relative w-[500px]"
         >
           <FormField
             control={form.control}
@@ -210,7 +210,9 @@ const Account = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">Update account</Button>
+          <Button type="submit" variant="outline">
+            Update account
+          </Button>
         </form>
       </Form>
     </div>

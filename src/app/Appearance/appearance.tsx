@@ -53,7 +53,10 @@ const Appearance = () => {
     <div className="flex min-h-screen flex-col items-center justify-between p-24">
       {" "}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 w-[500px]"
+        >
           <FormField
             control={form.control}
             name="font"
@@ -79,7 +82,7 @@ const Appearance = () => {
                 <FormDescription>
                   Set the font you want to use in the dashboard.
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="text-red-600" />
               </FormItem>
             )}
           />
@@ -155,7 +158,9 @@ const Appearance = () => {
             )}
           />
 
-          <Button type="submit">Update preferences</Button>
+          <Button type="submit" variant="outline">
+            Update preferences
+          </Button>
         </form>
       </Form>
     </div>
